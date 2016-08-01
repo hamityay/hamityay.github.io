@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | My Octopress Blog]]></title>
   <link href="http://hamityay.github.io/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://hamityay.github.io/"/>
-  <updated>2016-08-01T20:07:20+03:00</updated>
+  <updated>2016-08-01T20:12:30+03:00</updated>
   <id>http://hamityay.github.io/</id>
   <author>
     <name><![CDATA[Hamit YAY]]></name>
@@ -51,7 +51,7 @@
 
 <p>Ruby environment ile aynı işlevi gören <strong>Ruby Versiyon Manager (RVM)</strong> da mevcut ancak <strong>RuBy ENVironment (rbenv)</strong> daha yaygın olarak kullanılmaktadır.</p>
 
-<blockquote><p>Bir sonraki yazımız <strong>Semantek Versiyonlama</strong> hakkında olacaktır.</p></blockquote>
+<blockquote><p>Bir sonraki yazımız <strong>Semantik Versiyonlama</strong> hakkında olacaktır.</p></blockquote>
 ]]></content>
   </entry>
   
