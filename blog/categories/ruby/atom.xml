@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | My Octopress Blog]]></title>
   <link href="http://hamityay.github.io/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://hamityay.github.io/"/>
-  <updated>2016-08-01T20:06:33+03:00</updated>
+  <updated>2016-08-01T20:07:20+03:00</updated>
   <id>http://hamityay.github.io/</id>
   <author>
     <name><![CDATA[Hamit YAY]]></name>
@@ -24,7 +24,7 @@
 
 <p>Ruby environment burada devreye giriyor. Ruby environment, birçok proje için farklı ruby versiyonları ile çalışabilme olanağı sunmaktadır. Mesela A projesi 1.9 ruby versiyonu ile çalışırken, B projesi 2.3 versiyonu ile çalışır olsun. Bu iki farklı projeyi ruby environment sayesinde kolaylıkla çalıştırabiliriz. Ruby environmetn ile local ve global olarak ruby versiyonları tanımlayabiliriz. &lsquo;Local&rsquo; olarak tanımlanan ruby versiyonu sadece ilgili proje için geçerli olurken, &lsquo;global&rsquo; olarak tanımlanan ruby versiyonu ise yeni bir proje için ve local olarak tanımlanmayan projeler için geçerlidir.</p>
 
-<p>Ruby environment için geçerli bazı kodları paylaşalım.<strong>Ubuntu terminal için geçerlidir.</strong></p>
+<p>Ruby environment için geçerli bazı kodları paylaşalım. <strong>Ubuntu terminal için geçerlidir.</strong></p>
 
 <pre><code>rbenv versions
 </code></pre>
