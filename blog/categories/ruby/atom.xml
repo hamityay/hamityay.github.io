@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ruby | My Octopress Blog]]></title>
+  <link href="http://hamityay.github.io/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://hamityay.github.io/"/>
+  <updated>2016-08-01T20:03:57+03:00</updated>
+  <id>http://hamityay.github.io/</id>
+  <author>
+    <name><![CDATA[Hamit YAY]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby-Ruby Environment Hakkında...]]></title>
+    <link href="http://hamityay.github.io/blog/2016/08/01/ruby-ruby-environment-hakkinda-dot-dot-dot/"/>
+    <updated>2016-08-01T19:54:21+03:00</updated>
+    <id>http://hamityay.github.io/blog/2016/08/01/ruby-ruby-environment-hakkinda-dot-dot-dot</id>
+    <content type="html"><![CDATA[<p>Ruby bir object oriented programlam dilidir. 1995 yılında Yukihiro Matsumoto tarafından Japonyada tasarlanmıştır.</p>
+
+<p>Ruby ingilizceye yakın ve anlaşılması kolay bir programa dilidir. Ruby çok çeşitli ve güçlü bir ekosisteme sahiptir. Bu sayede geliştiriciler için bir çok kolaylık sunmaktadır. Ruby, yazmaya başladığınızda anlayabileceğiniz gibi sintaxı kolay ve eğlenceli br dildir. Şu an Ruby'nin 2.3.1 karalı sürümü mecuttur.</p>
+
+<p>Ruby environment burada devreye giriyor. Ruby environment, birçok proje için farklı ruby versiyonları ile çalışabilme olanağı sunmaktadır. Mesela A projesi 1.9 ruby versiyonu ile çalışırken, B projesi 2.3 versiyonu ile çalışır olsun. Bu iki farklı projeyi ruby environment sayesinde kolaylıkla çalıştırabiliriz. Ruby environmetn ile local ve global olarak ruby versiyonları tanımlayabiliriz. &lsquo;Local&rsquo; olarak tanımlanan ruby versiyonu sadece ilgili proje için geçerli olurken, &lsquo;global&rsquo; olarak tanımlanan ruby versiyonu ise yeni bir proje için ve local olarak tanımlanmayan projeler için geçerlidir.</p>
+
+<p>Ruby environment için geçerli bazı kodları paylaşalım.</p>
+
+<blockquote><p><em>Ubuntu terminal için geçerlidir.</em></p></blockquote>
+
+<pre><code>rbenv versions
+</code></pre>
+
+<p>Bu komut ile tanımlamış olduğunuz global ve local tanımlı olan ruby versiyonlarının listesini görebilirsiniz.</p>
+
+<pre><code>rbenv local 2.4.6
+</code></pre>
+
+<p>Proje kök dizinizde sadece o proje için geçerli ruby versiyonunuzun 2.4.6 olmasını sağlar. Yukarıda da bahsettiğimiz gibi ayrıca proje kök dizinine</p>
+
+<blockquote><p>.ruby-versiyon</p></blockquote>
+
+<p>dosyası oluşturup içine 2.4.6 yazıyor.</p>
+
+<p>Ruby environment ile kullanılabilecek komutları ve açıklamalarını</p>
+
+<pre><code>rbenv help
+</code></pre>
+
+<p>komutu ile terminalde listeleyebilirsiniz.</p>
+
+<p>Ruby ve ruby environment ile ilgili daha detaylı bilgiyi [ruby-lang.org] adresinden elde edebilirsiniz.</p>
+
+<p>Ruby environment ile aynı işlevi gören <strong>Ruby Versiyon Manager (RVM)</strong> da mevcut ancak <strong>RuBy ENVironment (rbenv)</strong> daha yaygın olarak kullanılmaktadır.</p>
+
+<blockquote><p>Bir sonraki yazımız <strong>Semantek Versiyonlama</strong> hakkında olacaktır.</p></blockquote>
+]]></content>
+  </entry>
+  
+</feed>
