@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://hamityay.github.io/atom.xml" rel="self"/>
   <link href="http://hamityay.github.io/"/>
-  <updated>2016-08-02T10:05:02+03:00</updated>
+  <updated>2016-08-02T10:13:23+03:00</updated>
   <id>http://hamityay.github.io/</id>
   <author>
     <name><![CDATA[Hamit YAY]]></name>
@@ -26,8 +26,9 @@
 
 <p>Rails'ın bir önceki sürümünü örnek olarak verecek olursak;</p>
 
-<blockquote><p>Rails  4|2|6
-   major|minor|patch</p></blockquote>
+<blockquote><p>Rails  4 | 2 | 6</p>
+
+<p>   major|minor|patch</p></blockquote>
 
 <p>versiyon numaralarını bu şekilde illişkilendirebiliriz.(Semantik Versiyonlamaya uygun olarak)</p>
 
@@ -40,12 +41,16 @@
 <dd>  Uygulamada oluşan hataların giderilmesi gibi durumlarda değişir. <strong>Bu değişiklikler geriye yönelik uyumludur.</strong></dd>
 </dl>
 
-<p>Major, Minor, Patch nuaralandırılırken dikkat edilmesi gereken hususları özetleyecek olursak;
-- Negatif olmayan sayılar kullnılmalıdır.
-- Bir uygulama 0.1.0 versiyonu ile başlar.
-- Yayınlanası için 1.0.0 versiyonunda olmalıdır.
-- Bir uygulama henüz yayınlanmadıysa yani Major &lsquo;0&rsquo; (sıfır) ise uygulama karalı değildir.
-- Her uygulllama versiyonunu gösteren API'si olmalıdır.</p>
+<p>Major, Minor, Patch nuaralandırılırken dikkat edilmesi gereken hususları özetleyecek olursak;</p>
+
+<ul>
+<li><p> Negatif olmayan sayılar kullanılmalıdır.</p></li>
+<li><p> Bir uygulama 0.1.0 versiyonu ile başlar.</p></li>
+<li><p> Uygulamanın yayınlanması için 1.0.0 versiyonunda olmalıdır.</p></li>
+<li><p> Bir uygulama henüz yayınlanmadıysa yani Major &lsquo;0&rsquo; (sıfır) ise uygulama karalı değildir.</p></li>
+<li><p> Her uygulllama versiyonunu gösteren API'si olmalıdır.</p></li>
+</ul>
+
 
 <p>Versiyon numarası o uygulamanın yaşını, ne kadar geliştiğini ve ona ne kadar emek harcandığını gösterir.</p>
 
