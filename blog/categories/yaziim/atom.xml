@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Yazıım | My Octopress Blog]]></title>
   <link href="http://hamityay.github.io/blog/categories/yaziim/atom.xml" rel="self"/>
   <link href="http://hamityay.github.io/"/>
-  <updated>2016-08-02T10:04:08+03:00</updated>
+  <updated>2016-08-02T10:05:02+03:00</updated>
   <id>http://hamityay.github.io/</id>
   <author>
     <name><![CDATA[Hamit YAY]]></name>
@@ -26,9 +26,8 @@
 
 <p>Rails'ın bir önceki sürümünü örnek olarak verecek olursak;</p>
 
-<blockquote><p>Rails  4|2|6</p>
-
-<p>   major|minor|patch</p></blockquote>
+<blockquote><p>Rails  4|2|6
+   major|minor|patch</p></blockquote>
 
 <p>versiyon numaralarını bu şekilde illişkilendirebiliriz.(Semantik Versiyonlamaya uygun olarak)</p>
 
