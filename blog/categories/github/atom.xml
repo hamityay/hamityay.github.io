@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Github | My Octopress Blog]]></title>
   <link href="http://hamityay.github.io/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://hamityay.github.io/"/>
-  <updated>2016-08-02T12:20:21+03:00</updated>
+  <updated>2016-08-02T12:23:58+03:00</updated>
   <id>http://hamityay.github.io/</id>
   <author>
     <name><![CDATA[Hamit YAY]]></name>
@@ -115,6 +115,8 @@
 <p>Aşağıda kout şablonu gösterilmektedir.</p>
 
 <p><img src="http://danielkummer.github.io/git-flow-cheatsheet/img/git-flow-commands.png" alt="alt text" /></p>
+
+<p>Daha detaylı bilgi için <a href="http://danielkummer.github.io/git-flow-cheatsheet/">git-flow cheatsheet</a> adrsini ziyaret edebilirsiniz.</p>
 ]]></content>
   </entry>
   
