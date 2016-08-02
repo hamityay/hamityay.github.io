@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://hamityay.github.io/atom.xml" rel="self"/>
   <link href="http://hamityay.github.io/"/>
-  <updated>2016-08-01T20:12:30+03:00</updated>
+  <updated>2016-08-02T09:59:34+03:00</updated>
   <id>http://hamityay.github.io/</id>
   <author>
     <name><![CDATA[Hamit YAY]]></name>
@@ -12,6 +12,48 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Semantik Versiyonlama]]></title>
+    <link href="http://hamityay.github.io/blog/2016/08/02/semantik-versiyonlama/"/>
+    <updated>2016-08-02T09:13:07+03:00</updated>
+    <id>http://hamityay.github.io/blog/2016/08/02/semantik-versiyonlama</id>
+    <content type="html"><![CDATA[<p>Versiyonlama işlemi uygulamalar için bir sınıflandırma iişlemidir. Geriye yönelik geliimini takip edebilmek ve hata denetiminiyapabilmek gibi bir çok amaca hizmet eder.</p>
+
+<p>Semantik versiyonlama, uygulama versiyonlama işlemi için belirli standartları olan ve yagın olarak kullanılan versiyonlama sistemidir.</p>
+
+<blockquote><p>Rails 4.2.6</p></blockquote>
+
+<p>Rails'ın bir önceki sürümünü örnek olarak verecek olursak;</p>
+
+<blockquote><p>Rails  4|2|6
+   major|minor|patch</p></blockquote>
+
+<p>versiyon numaralarını bu şekilde illişkilendirebiliriz.(Semantik Versiyonlamaya uygun olarak)</p>
+
+<dl>
+<dt>Major</dt>
+<dd>  Uygulamada köklü değişikler yapıldığında değişir. <strong>Bu değişiklikler geriye yönelik (önceki sürümler ile) uyumlu olmayabilir. (Gerie Yönelik Uyumlu Değildir)</strong></dd>
+<dt>Minor</dt>
+<dd>  Uygulamaya yeni özellikler, fonksiyonellikler eklendiğinde değişir. <strong>Bu değişiklikler geriye yönelik uyumludur.</strong></dd>
+<dt>Patch</dt>
+<dd>  Uygulamada oluşan hataların giderilmesi gibi durumlarda değişir. <strong>Bu değişiklikler geriye yönelik uyumludur.</strong></dd>
+</dl>
+
+<p>Major, Minor, Patch nuaralandırılırken dikkat edilmesi gereken hususları özetleyecek olursak;
+- Negatif olmayan sayılar kullnılmalıdır.
+- Bir uygulama 0.1.0 versiyonu ile başlar.
+- Yayınlanası için 1.0.0 versiyonunda olmalıdır.
+- Bir uygulama henüz yayınlanmadıysa yani Major &lsquo;0&rsquo; (sıfır) ise uygulama karalı değildir.
+- Her uygulllama versiyonunu gösteren API'si olmalıdır.</p>
+
+<p>Versiyon numarası o uygulamanın yaşını, ne kadar geliştiğini ve ona ne kadar emek harcandığını gösterir.</p>
+
+<p>Daha detaylı bilgi için <a href="http://semver.org/">Semantik Versiyoning 2.0</a> adresini ziyaret edebilir, türkçesi için ise <a href="https://github.com/lab2023/semver/blob/master/semver_tr.md">Lab2023 Semver</a> adresini ziyaret edebilirsiniz.</p>
+
+<blockquote><p>Bir sonraki yazımız <strong>Git Flow</strong> hakkında olacaktır.</p></blockquote>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ruby-Ruby Environment Hakkında...]]></title>
@@ -47,7 +89,7 @@
 
 <p>komutu ile terminalde listeleyebilirsiniz.</p>
 
-<p>Ruby ve ruby environment ile ilgili daha detaylı bilgiyi [ruby-lang.org] adresinden elde edebilirsiniz.</p>
+<p>Ruby ve ruby environment ile ilgili daha detaylı bilgiyi <a href="https://www.ruby-lang.org">Ruby Programming Language</a> adresinden elde edebilirsiniz.</p>
 
 <p>Ruby environment ile aynı işlevi gören <strong>Ruby Versiyon Manager (RVM)</strong> da mevcut ancak <strong>RuBy ENVironment (rbenv)</strong> daha yaygın olarak kullanılmaktadır.</p>
 
