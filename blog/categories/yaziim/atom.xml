@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Yazıım | My Octopress Blog]]></title>
   <link href="http://hamityay.github.io/blog/categories/yaziim/atom.xml" rel="self"/>
   <link href="http://hamityay.github.io/"/>
-  <updated>2016-08-02T10:13:23+03:00</updated>
+  <updated>2016-08-02T12:20:21+03:00</updated>
   <id>http://hamityay.github.io/</id>
   <author>
     <name><![CDATA[Hamit YAY]]></name>
@@ -33,11 +33,11 @@
 <p>versiyon numaralarını bu şekilde illişkilendirebiliriz.(Semantik Versiyonlamaya uygun olarak)</p>
 
 <dl>
-<dt><strong>Major</strong></dt>
+<dt><strong><em>Major</em></strong></dt>
 <dd>  Uygulamada köklü değişikler yapıldığında değişir. <strong>Bu değişiklikler geriye yönelik (önceki sürümler ile) uyumlu olmayabilir. (Gerie Yönelik Uyumlu Değildir)</strong></dd>
-<dt><strong>Minor</strong></dt>
+<dt><strong><em>Minor</em></strong></dt>
 <dd>  Uygulamaya yeni özellikler, fonksiyonellikler eklendiğinde değişir. <strong>Bu değişiklikler geriye yönelik uyumludur.</strong></dd>
-<dt><strong>Patch</strong></dt>
+<dt><strong><em>Patch</em></strong></dt>
 <dd>  Uygulamada oluşan hataların giderilmesi gibi durumlarda değişir. <strong>Bu değişiklikler geriye yönelik uyumludur.</strong></dd>
 </dl>
 
@@ -56,7 +56,7 @@
 
 <p>Daha detaylı bilgi için <a href="http://semver.org/">Semantik Versiyoning 2.0</a> adresini ziyaret edebilir, türkçesi için ise <a href="https://github.com/lab2023/semver/blob/master/semver_tr.md">Lab2023 Semver</a> adresini ziyaret edebilirsiniz.</p>
 
-<blockquote><p>Bir sonraki yazımız <strong>Git Flow</strong> hakkında olacaktır.</p></blockquote>
+<blockquote><p>Bir sonraki yazımız <strong>Git Flow(<a href="https://hamityay.github.io/blog/2016/08/02/git-fow/">https://hamityay.github.io/blog/2016/08/02/git-fow/</a>)</strong> hakkında olacaktır.</p></blockquote>
 ]]></content>
   </entry>
   

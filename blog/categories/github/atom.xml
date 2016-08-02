@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Github | My Octopress Blog]]></title>
+  <link href="http://hamityay.github.io/blog/categories/github/atom.xml" rel="self"/>
+  <link href="http://hamityay.github.io/"/>
+  <updated>2016-08-02T12:20:21+03:00</updated>
+  <id>http://hamityay.github.io/</id>
+  <author>
+    <name><![CDATA[Hamit YAY]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Git Flow]]></title>
+    <link href="http://hamityay.github.io/blog/2016/08/02/git-flow/"/>
+    <updated>2016-08-02T10:14:30+03:00</updated>
+    <id>http://hamityay.github.io/blog/2016/08/02/git-flow</id>
+    <content type="html"><![CDATA[<p>Git flow, git deki yeni bir branch oluşturma işlemini bir standart haline getirmiş, uygulama geliştirme aşamasında büyük kolaylık sağlayan git tabanlı bir araçtır. Git tabanlı olması git deki komutların aynen kullanılabilmesini sağlar.</p>
+
+<h4>Git flowu kurmak için</h4>
+
+<pre><code>apt-get install git-flow
+</code></pre>
+
+<p>komutunu (linux için) terminal üzerinde çalıştırmak gerekir.</p>
+
+<h4>Git flowu bir projede kullanabilmek için başalangıçta</h4>
+
+<pre><code>git flow init
+</code></pre>
+
+<p>komutu kullanılır.</p>
+
+<p>Git flowda standartlaştırılmış 5 adet branch mevcut. Bunlar;</p>
+
+<ul>
+<li><p><strong>Master</strong> ana branch.</p></li>
+<li><p><strong>Develop</strong> uygulama geliştirme branchi.</p></li>
+<li><p><strong>Feature</strong> uygulamaya yeni bir özellik eklemek için branch. Her bir yeni özellikiçin yeni bir feature branch oluşturmak ve bitirmek gerekiyor. nasıl yapıldığına birazdan değineceğiz.</p></li>
+<li><p><strong>Hotfix</strong> uygulamadaki ataları gidermek için branch.</p></li>
+<li><p><strong>Release</strong> uygulamayı yayınlamak için branch.</p></li>
+</ul>
+
+
+<h4>Yeni bir feature (özellik) oluşturmak için</h4>
+
+<pre><code>git flow feature start myfeature
+</code></pre>
+
+<p>komutu kullanılır. Bu komut uygulamaya yeni bir özellikeklemek için develop brachini temel alan myfeature isimli feature branch ouşturur.</p>
+
+<h4>Bir feature tamamlamak için</h4>
+
+<pre><code>git flow feature finish myfeature
+</code></pre>
+
+<p>komutu kullanır. Bu komut kullanılan branchi develop olarak değiştiirir. Eklenmiiş olan özellikleri develop branchi ile birleştirir.(merge) Oluşturulmuş olan myfeature feature branchini siler</p>
+
+<h4>Bir feature yayınlamak için</h4>
+
+<pre><code>git flow feature publish myfeature
+</code></pre>
+
+<p>koutu kullanılır. Bir ekip olarak çalışılıyorsa ekipdeki diğerleri bu feature ulaşabilirler.</p>
+
+<h4>Yayınlanmış bir feature ı almak için</h4>
+
+<pre><code>git flow feature pull myfeature
+</code></pre>
+
+<p>komutu kullanılır.</p>
+
+<h4>Bir uygulamayı yayımlamak için (release)</h4>
+
+<pre><code>git flow release start 0.1.0
+</code></pre>
+
+<p>örnek komutu kullanılır. Bu kumut yeni bir release branch oluşturur.</p>
+
+<h4>Yayımlanmış bir release i yayınlamak için</h4>
+
+<pre><code>git flow release publish 0.1.0
+</code></pre>
+
+<p>komutu kullanılır. Bu komut öncesinde local olarak yapılan release barnchi ile beraber yayınlamayı sağlar.</p>
+
+<h4>Bir uygulamanın yayımlanmasını bitirmek için</h4>
+
+<pre><code>git flow release finish 0.1.0
+</code></pre>
+
+<p>komutu kullaılır. Bu komut release barnchini master branchine birleştirir. Arka planda develop barnchi ile de birleştirir. Yayınlama için açılmış olan 0.1.0 release branch silinir.</p>
+
+<h4>Yeni bir hata düzeltme branchi oluşturmak için</h4>
+
+<pre><code>git flow hotfix start version
+</code></pre>
+
+<p>komutu kullanılır. Yeni bir hotfix branch oluşturur.</p>
+
+<h4>Hata düzeltme branchini bitirmek için</h4>
+
+<pre><code>git flow hotfix finish version
+</code></pre>
+
+<p>komutu kullanılır. Bu komut oluşturulmuş olan hotfix branchini develop ve master branchleri ile birleştirir. Hotfix brnachi silinir.</p>
+
+<p>Aşağıdaki resimde çeşitli git flow işlemleri gösterilmektedir.</p>
+
+<p><img src="http://nvie.com/img/git-model@2x.png" alt="alt text" /></p>
+
+<p>Aşağıda kout şablonu gösterilmektedir.</p>
+
+<p><img src="http://danielkummer.github.io/git-flow-cheatsheet/img/git-flow-commands.png" alt="alt text" /></p>
+]]></content>
+  </entry>
+  
+</feed>
