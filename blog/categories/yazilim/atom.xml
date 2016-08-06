@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Yazılım | Hamit YAY]]></title>
   <link href="http://hamityay.github.io/blog/categories/yazilim/atom.xml" rel="self"/>
   <link href="http://hamityay.github.io/"/>
-  <updated>2016-08-06T22:03:24+03:00</updated>
+  <updated>2016-08-06T22:39:03+03:00</updated>
   <id>http://hamityay.github.io/</id>
   <author>
     <name><![CDATA[Hamit YAY]]></name>
@@ -18,9 +18,9 @@
     <link href="http://hamityay.github.io/blog/2016/08/02/semantik-versiyonlama/"/>
     <updated>2016-08-02T09:13:07+03:00</updated>
     <id>http://hamityay.github.io/blog/2016/08/02/semantik-versiyonlama</id>
-    <content type="html"><![CDATA[<p>Versiyonlama işlemi uygulamalar için bir sınıflandırma iişlemidir. Geriye yönelik geliimini takip edebilmek ve hata denetiminiyapabilmek gibi bir çok amaca hizmet eder.</p>
+    <content type="html"><![CDATA[<p>Versiyonlama işlemi uygulamalar için bir sınıflandırma işlemidir. Geriye yönelik gelişimini takip edebilmek ve hata denetimini yapabilmek gibi bir çok amaca hizmet eder.</p>
 
-<p>Semantik versiyonlama, uygulama versiyonlama işlemi için belirli standartları olan ve yagın olarak kullanılan versiyonlama sistemidir.</p>
+<p>Semantik versiyonlama, uygulama versiyonlama işlemi için belirli standartları olan ve yaygın olarak kullanılan versiyonlama sistemidir.</p>
 
 <blockquote><p>Rails 4.2.6</p></blockquote>
 
@@ -30,11 +30,11 @@
 
 <p>   major|minor|patch</p></blockquote>
 
-<p>versiyon numaralarını bu şekilde illişkilendirebiliriz.(Semantik Versiyonlamaya uygun olarak)</p>
+<p>versiyon numaralarını bu şekilde ilişkilendirebiliriz.(Semantik Versiyonlamaya uygun olarak)</p>
 
 <dl>
 <dt><strong><em>Major</em></strong></dt>
-<dd>  Uygulamada köklü değişikler yapıldığında değişir. <strong>Bu değişiklikler geriye yönelik (önceki sürümler ile) uyumlu olmayabilir. (Gerie Yönelik Uyumlu Değildir)</strong></dd>
+<dd>  Uygulamada köklü değişikler yapıldığında değişir. <strong>Bu değişiklikler geriye yönelik (önceki sürümler ile) uyumlu olmayabilir. (Geriye Yönelik Uyumlu Değildir)</strong></dd>
 <dt><strong><em>Minor</em></strong></dt>
 <dd>  Uygulamaya yeni özellikler, fonksiyonellikler eklendiğinde değişir. <strong>Bu değişiklikler geriye yönelik uyumludur.</strong></dd>
 <dt><strong><em>Patch</em></strong></dt>
@@ -48,7 +48,7 @@
 <li><p> Bir uygulama 0.1.0 versiyonu ile başlar.</p></li>
 <li><p> Uygulamanın yayınlanması için 1.0.0 versiyonunda olmalıdır.</p></li>
 <li><p> Bir uygulama henüz yayınlanmadıysa yani Major &lsquo;0&rsquo; (sıfır) ise uygulama karalı değildir.</p></li>
-<li><p> Her uygulllama versiyonunu gösteren API'si olmalıdır.</p></li>
+<li><p> Her uygulama versiyonunu gösteren API'si olmalıdır.</p></li>
 </ul>
 
 
