@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Github | Hamit YAY]]></title>
   <link href="http://hamityay.github.io/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://hamityay.github.io/"/>
-  <updated>2016-08-06T22:39:03+03:00</updated>
+  <updated>2016-08-06T22:40:28+03:00</updated>
   <id>http://hamityay.github.io/</id>
   <author>
     <name><![CDATA[Hamit YAY]]></name>
@@ -106,7 +106,7 @@
 <pre><code>git flow hotfix finish version
 </code></pre>
 
-<p>komutu kullanılır. Bu komut oluşturulmuş olan hotfix branchini develop ve master branchleri ile birleştirir. Hotfix brnachi silinir.</p>
+<p>komutu kullanılır. Bu komut oluşturulmuş olan hotfix branchini develop ve master branchleri ile birleştirir. Hotfix branchi silinir.</p>
 
 <p>Aşağıdaki resimde çeşitli git flow işlemleri gösterilmektedir.</p>
 
