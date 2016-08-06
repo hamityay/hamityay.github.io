@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://hamityay.github.io/blog/2016/08/06/linux-terminal/</loc>
+<lastmod>2016-08-06T20:24:09+03:00</lastmod>
+</url>
+<url>
 <loc>http://hamityay.github.io/blog/2016/08/02/git-flow/</loc>
 <lastmod>2016-08-02T10:14:30+03:00</lastmod>
 </url>
@@ -22,9 +26,18 @@
 <loc>http://hamityay.github.io/blog/categories/ruby/</loc>
 </url>
 <url>
-<loc>http://hamityay.github.io/blog/categories/yaziim/</loc>
+<loc>http://hamityay.github.io/blog/categories/yazilim/</loc>
 </url>
 <url>
 <loc>http://hamityay.github.io/blog/categories/github/</loc>
+</url>
+<url>
+<loc>http://hamityay.github.io/blog/categories/linux-terminal/</loc>
+</url>
+<url>
+<loc>http://hamityay.github.io/blog/categories/linux-yaz-kampi-2016/</loc>
+</url>
+<url>
+<loc>http://hamityay.github.io/blog/categories/bolu-06-slash-08-slash-16/</loc>
 </url>
 </urlset>

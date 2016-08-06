@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Ruby | My Octopress Blog]]></title>
+  <title><![CDATA[Category: Ruby | Hamit YAY]]></title>
   <link href="http://hamityay.github.io/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://hamityay.github.io/"/>
-  <updated>2016-08-02T12:29:53+03:00</updated>
+  <updated>2016-08-06T22:03:24+03:00</updated>
   <id>http://hamityay.github.io/</id>
   <author>
     <name><![CDATA[Hamit YAY]]></name>

@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Git Flow - Hamit YAY</title>
+  <title>Linux Terminal - Hamit YAY</title>
   <meta name="author" content="Hamit YAY">
 
   
-  <meta name="description" content="Git flow, git deki yeni bir branch oluşturma işlemlerini bir standart haline getirmiş, uygulama geliştirme aşamasında büyük kolaylık sağlayan git &hellip;">
+  <meta name="description" content="Bu yazı, bir yazılım geliştiricisi olarak linux terminalde en çok kullanılan komutlar hakkında olacaktır. Linux terminal açık kaynak felsefesi ile &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://hamityay.github.io/blog/2016/08/02/git-flow/">
+  <link rel="canonical" href="http://hamityay.github.io/blog/2016/08/06/linux-terminal/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Hamit YAY" type="application/atom+xml">
@@ -68,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">Git Flow</h1>
+      <h1 class="entry-title">Linux Terminal</h1>
     
     
       <p class="meta">
@@ -77,112 +77,109 @@
 
 
 
-<time class='entry-date' datetime='2016-08-02T10:14:30+03:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2016</span></span> <span class='time'>10:14 am</span></time>
+<time class='entry-date' datetime='2016-08-06T20:24:09+03:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>8:24 pm</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Git flow, git deki yeni bir branch oluşturma işlemlerini bir standart haline getirmiş, uygulama geliştirme aşamasında büyük kolaylık sağlayan git tabanlı bir araçtır. Git tabanlı olması git deki komutların aynen kullanılabilmesini sağlar.</p>
+<div class="entry-content"><p>Bu yazı, bir yazılım geliştiricisi olarak linux terminalde en çok kullanılan komutlar hakkında olacaktır. Linux terminal açık kaynak felsefesi ile yazılım geliştiren bir kimsenin eli ayağı niteliğindedir. Bu yüzden terminale dolayısı ile terminal komutlarına elimizden geldiğince hakim olmakta yarar var. Bu düşünceye dayanarak, Lnux yaz kampında bu gün gösterilen terminal komutlarına değineceğim.</p>
 
-<h4>Git flowu kurmak için</h4>
+<p>İlk olarak</p>
 
-<pre><code>apt-get install git-flow
+<pre><code>$PATH
 </code></pre>
 
-<p>komutunu (linux için) terminal üzerinde çalıştırmak gerekir.</p>
+<p>komutu.(Büyük yazıldığına dikkat edelim) PATH çalıştırılabilir dosyaların yerini gösteren değişken. Kullanıcı tarafından çalıştırılabilecek komut ve yazılımların aranacakları yerleri belirtir. Yukarıdaki komutta tanımlı olan dzinleri listeler.</p>
 
-<h4>Git flowu bir projede kullanabilmek için başalangıçta</h4>
-
-<pre><code>git flow init
+<pre><code>export PATH=$PATH:~/project
 </code></pre>
 
-<p>komutu kullanılır.</p>
+<p>komutu ile bir önceki komut ile listelenen dizinlere kök dizinindeki project klasör dizininin eklenmesini sağlar. Bu işlem sadece terminalin kullanıldığı oturum için geçerli olur.</p>
 
-<p>Git flowda standartlaştırılmış 5 adet branch mevcut. Bunlar;</p>
+<p>Kalıcı olarak eklemek için kök dizininde bulunan <em>.bashrc</em> dosyasına istenilen dizin eklenebilir. Bu işlemi terminal üzerinden <em>nano</em> editörü kullanılarak yapılabilir.</p>
 
-<ul>
-<li><p><strong>Master</strong> ana branch.</p></li>
-<li><p><strong>Develop</strong> uygulama geliştirme branchi.</p></li>
-<li><p><strong>Feature</strong> uygulamaya yeni bir özellik eklemek için branch. Her bir yeni özellikiçin yeni bir feature branch oluşturmak ve bitirmek gerekiyor. nasıl yapıldığına birazdan değineceğiz.</p></li>
-<li><p><strong>Hotfix</strong> uygulamadaki ataları gidermek için branch.</p></li>
-<li><p><strong>Release</strong> uygulamayı yayınlamak için branch.</p></li>
-</ul>
-
-
-<h4>Yeni bir feature (özellik) oluşturmak için</h4>
-
-<pre><code>git flow feature start myfeature
+<pre><code>nano .bashrc
 </code></pre>
 
-<p>komutu kullanılır. Bu komut uygulamaya yeni bir özellik eklemek için develop brachini temel alan myfeature isimli feature branch ouşturur.</p>
+<p>komutu terminal üzerinde <em>.bashrc</em> dosyasının içeriğinin düzenlenebilmesine olanak tanır. İstenilen değişiklikler yapıldıktan sonra</p>
 
-<h4>Bir feature tamamlamak için</h4>
+<blockquote><p>ctrl + x</p></blockquote>
 
-<pre><code>git flow feature finish myfeature
+<p>kısa yolu editörden çıkılmasını sağlar. Değişiklikleri kaydetmek için  <em>&ldquo;y&rdquo;</em>  ve  <em>&ldquo;enter&rdquo;</em>  tuşlarına basılması yeterli olacaktır.</p>
+
+<p><strong>Dosya işlemleri ile ilgili komutlar</strong></p>
+
+<pre><code>ls
 </code></pre>
 
-<p>komutu kullanır. Bu komut kullanılan branchi develop olarak değiştirir. Eklenmiiş olan özellikleri develop branchi ile birleştirir.(merge) Oluşturulmuş olan myfeature feature branchini siler</p>
+<p>komutu bulunulan dizindeki klasör ve dosyaları listeler.</p>
 
-<h4>Bir feature yayınlamak için</h4>
-
-<pre><code>git flow feature publish myfeature
+<pre><code>ls -a
 </code></pre>
 
-<p>komutu kullanılır. Bir ekip olarak çalışılıyorsa ekipdeki diğerleri bu feature a ulaşabilirler.</p>
+<p>komutu bulunulan dizindeki dosya ve klasörleri gizli olanlar ile birlikte listeler.</p>
 
-<h4>Yayınlanmış bir feature ı almak için</h4>
-
-<pre><code>git flow feature pull myfeature
+<pre><code>cd ~/project
 </code></pre>
 
-<p>komutu kullanılır.</p>
+<p>komutu kök dizindeki project klasör dizinine geçmeyi sağlar.</p>
 
-<h4>Bir uygulamayı yayımlamak için (release)</h4>
-
-<pre><code>git flow release start 0.1.0
+<pre><code>cd ..
 </code></pre>
 
-<p>örnek komutu kullanılır. Bu kumut yeni bir release branch oluşturur.</p>
+<p>komutu bir üst dizine geçmeyi sağlar.</p>
 
-<h4>Yayımlanmış bir release i yayınlamak için</h4>
-
-<pre><code>git flow release publish 0.1.0
+<pre><code>pwd
 </code></pre>
 
-<p>komutu kullanılır. Bu komut öncesinde local olarak yapılan release barnchi ile beraber yayınlamayı sağlar.</p>
+<p>bulunulan dizini gösterir.</p>
 
-<h4>Bir uygulamanın yayımlanmasını bitirmek için</h4>
-
-<pre><code>git flow release finish 0.1.0
+<pre><code>mkdir deneme
 </code></pre>
 
-<p>komutu kullaılır. Bu komut release barnchini master branchine birleştirir. Arka planda develop barnchi ile de birleştirir. Yayınlama için açılmış olan 0.1.0 release branch silinir.</p>
+<p>Bulunulan dizine <em>deneme</em> isimli klasör oluşturur.</p>
 
-<h4>Yeni bir hata düzeltme branchi oluşturmak için</h4>
-
-<pre><code>git flow hotfix start version
+<pre><code>mkdir -p deneme/deneme1
 </code></pre>
 
-<p>komutu kullanılır. Yeni bir hotfix branch oluşturur.</p>
+<p>Bulunulan dizinde iç içe dosya açar.</p>
 
-<h4>Hata düzeltme branchini bitirmek için</h4>
-
-<pre><code>git flow hotfix finish version
+<pre><code>rm -rf deneme.txt
 </code></pre>
 
-<p>komutu kullanılır. Bu komut oluşturulmuş olan hotfix branchini develop ve master branchleri ile birleştirir. Hotfix brnachi silinir.</p>
+<p>komutu klasör ya da dosya silmek için kullanılabilir.</p>
 
-<p>Aşağıdaki resimde çeşitli git flow işlemleri gösterilmektedir.</p>
+<pre><code>nano deneme.txt
+</code></pre>
 
-<p><img src="http://nvie.com/img/git-model@2x.png" alt="alt text" /></p>
+<p>komutu eğer dizinde  <em>deneme.txt</em>  dosyası yoksa oluşturur ve terminal üzerinde düzenleyebilmek için açar.</p>
 
-<p>Aşağıda git flow için komut şablonu gösterilmektedir.</p>
+<pre><code>cat gemfile
+</code></pre>
 
-<p><img src="http://danielkummer.github.io/git-flow-cheatsheet/img/git-flow-commands.png" alt="alt text" /></p>
+<p> <em>gemfile</em>  dosyasının içeriğini terminal üzerinde gösterir.</p>
 
-<p>Daha detaylı bilgi için <a href="http://danielkummer.github.io/git-flow-cheatsheet/">git-flow cheatsheet</a> adrsini ziyaret edebilirsiniz.</p>
+<pre><code>tail -f development.log
+</code></pre>
+
+<p><em>tail</em>  komutu dizindeki dosyanın son bölümünü gösterir.  <em>-f</em>  parametresi ile log dosyasının realtime takip edilebilmesini sağlar.</p>
+
+<pre><code>which ruby
+</code></pre>
+
+<p>komutu konsolda çalıştırılan komutların(ruby gibi) hangi dizinden çalıştırıldığını gösterir.</p>
+
+<pre><code>grep -i Hasan seed.rb
+</code></pre>
+
+<p><em>seed.rb</em>  dosyası içerisinde  <em>hasan</em>  stringini arar ve eşleşen satırları listeler.  <em>-i</em>  parametresi büyük küçük harf duyarlılık sorununu ortadan kaldırmak için kullanılabilir. Kullanılmadan da arama yapılabilir. Kullanılmadığı takdirde arama yaparken büyük küçük harfe duyarlı bir şekilde arama yapar.</p>
+
+<pre><code>find ~project/ruby -name "*.css"
+</code></pre>
+
+<p>Arama yapmak için kullanılır. Belirtilen dizindeki tüm <em>css</em> uzantılı dosyaları listeler.</p>
 </div>
 
 
@@ -198,12 +195,12 @@
 
 
 
-<time class='entry-date' datetime='2016-08-02T10:14:30+03:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2016</span></span> <span class='time'>10:14 am</span></time>
+<time class='entry-date' datetime='2016-08-06T20:24:09+03:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>8:24 pm</span></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/github/'>github</a>
+    <a class='category' href='/blog/categories/bolu-06-slash-08-slash-16/'>bolu 06/08/16</a>, <a class='category' href='/blog/categories/linux-terminal/'>linux terminal</a>, <a class='category' href='/blog/categories/linux-yaz-kampi-2016/'>linux yaz kampı 2016</a>
   
 </span>
 
@@ -212,7 +209,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://hamityay.github.io/blog/2016/08/02/git-flow/" data-via="hMt_y" data-counturl="http://hamityay.github.io/blog/2016/08/02/git-flow/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://hamityay.github.io/blog/2016/08/06/linux-terminal/" data-via="hMt_y" data-counturl="http://hamityay.github.io/blog/2016/08/06/linux-terminal/" >Tweet</a>
   
   
   
@@ -223,10 +220,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2016/08/02/semantik-versiyonlama/" title="Previous Post: Semantik Versiyonlama">&laquo; Semantik Versiyonlama</a>
+        <a class="basic-alignment left" href="/blog/2016/08/02/git-flow/" title="Previous Post: Git Flow">&laquo; Git Flow</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2016/08/06/linux-terminal/" title="Next Post: Linux Terminal">Linux Terminal &raquo;</a>
       
     </p>
   </footer>

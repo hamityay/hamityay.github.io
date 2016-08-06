@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Hamit YAY]]></title>
   <link href="http://hamityay.github.io/atom.xml" rel="self"/>
   <link href="http://hamityay.github.io/"/>
-  <updated>2016-08-02T12:29:53+03:00</updated>
+  <updated>2016-08-06T22:03:24+03:00</updated>
   <id>http://hamityay.github.io/</id>
   <author>
     <name><![CDATA[Hamit YAY]]></name>
@@ -12,6 +12,110 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Linux Terminal]]></title>
+    <link href="http://hamityay.github.io/blog/2016/08/06/linux-terminal/"/>
+    <updated>2016-08-06T20:24:09+03:00</updated>
+    <id>http://hamityay.github.io/blog/2016/08/06/linux-terminal</id>
+    <content type="html"><![CDATA[<p>Bu yazı, bir yazılım geliştiricisi olarak linux terminalde en çok kullanılan komutlar hakkında olacaktır. Linux terminal açık kaynak felsefesi ile yazılım geliştiren bir kimsenin eli ayağı niteliğindedir. Bu yüzden terminale dolayısı ile terminal komutlarına elimizden geldiğince hakim olmakta yarar var. Bu düşünceye dayanarak, Lnux yaz kampında bu gün gösterilen terminal komutlarına değineceğim.</p>
+
+<p>İlk olarak</p>
+
+<pre><code>$PATH
+</code></pre>
+
+<p>komutu.(Büyük yazıldığına dikkat edelim) PATH çalıştırılabilir dosyaların yerini gösteren değişken. Kullanıcı tarafından çalıştırılabilecek komut ve yazılımların aranacakları yerleri belirtir. Yukarıdaki komutta tanımlı olan dzinleri listeler.</p>
+
+<pre><code>export PATH=$PATH:~/project
+</code></pre>
+
+<p>komutu ile bir önceki komut ile listelenen dizinlere kök dizinindeki project klasör dizininin eklenmesini sağlar. Bu işlem sadece terminalin kullanıldığı oturum için geçerli olur.</p>
+
+<p>Kalıcı olarak eklemek için kök dizininde bulunan <em>.bashrc</em> dosyasına istenilen dizin eklenebilir. Bu işlemi terminal üzerinden <em>nano</em> editörü kullanılarak yapılabilir.</p>
+
+<pre><code>nano .bashrc
+</code></pre>
+
+<p>komutu terminal üzerinde <em>.bashrc</em> dosyasının içeriğinin düzenlenebilmesine olanak tanır. İstenilen değişiklikler yapıldıktan sonra</p>
+
+<blockquote><p>ctrl + x</p></blockquote>
+
+<p>kısa yolu editörden çıkılmasını sağlar. Değişiklikleri kaydetmek için  <em>&ldquo;y&rdquo;</em>  ve  <em>&ldquo;enter&rdquo;</em>  tuşlarına basılması yeterli olacaktır.</p>
+
+<p><strong>Dosya işlemleri ile ilgili komutlar</strong></p>
+
+<pre><code>ls
+</code></pre>
+
+<p>komutu bulunulan dizindeki klasör ve dosyaları listeler.</p>
+
+<pre><code>ls -a
+</code></pre>
+
+<p>komutu bulunulan dizindeki dosya ve klasörleri gizli olanlar ile birlikte listeler.</p>
+
+<pre><code>cd ~/project
+</code></pre>
+
+<p>komutu kök dizindeki project klasör dizinine geçmeyi sağlar.</p>
+
+<pre><code>cd ..
+</code></pre>
+
+<p>komutu bir üst dizine geçmeyi sağlar.</p>
+
+<pre><code>pwd
+</code></pre>
+
+<p>bulunulan dizini gösterir.</p>
+
+<pre><code>mkdir deneme
+</code></pre>
+
+<p>Bulunulan dizine <em>deneme</em> isimli klasör oluşturur.</p>
+
+<pre><code>mkdir -p deneme/deneme1
+</code></pre>
+
+<p>Bulunulan dizinde iç içe dosya açar.</p>
+
+<pre><code>rm -rf deneme.txt
+</code></pre>
+
+<p>komutu klasör ya da dosya silmek için kullanılabilir.</p>
+
+<pre><code>nano deneme.txt
+</code></pre>
+
+<p>komutu eğer dizinde  <em>deneme.txt</em>  dosyası yoksa oluşturur ve terminal üzerinde düzenleyebilmek için açar.</p>
+
+<pre><code>cat gemfile
+</code></pre>
+
+<p> <em>gemfile</em>  dosyasının içeriğini terminal üzerinde gösterir.</p>
+
+<pre><code>tail -f development.log
+</code></pre>
+
+<p><em>tail</em>  komutu dizindeki dosyanın son bölümünü gösterir.  <em>-f</em>  parametresi ile log dosyasının realtime takip edilebilmesini sağlar.</p>
+
+<pre><code>which ruby
+</code></pre>
+
+<p>komutu konsolda çalıştırılan komutların(ruby gibi) hangi dizinden çalıştırıldığını gösterir.</p>
+
+<pre><code>grep -i Hasan seed.rb
+</code></pre>
+
+<p><em>seed.rb</em>  dosyası içerisinde  <em>hasan</em>  stringini arar ve eşleşen satırları listeler.  <em>-i</em>  parametresi büyük küçük harf duyarlılık sorununu ortadan kaldırmak için kullanılabilir. Kullanılmadan da arama yapılabilir. Kullanılmadığı takdirde arama yaparken büyük küçük harfe duyarlı bir şekilde arama yapar.</p>
+
+<pre><code>find ~project/ruby -name "*.css"
+</code></pre>
+
+<p>Arama yapmak için kullanılır. Belirtilen dizindeki tüm <em>css</em> uzantılı dosyaları listeler.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Git Flow]]></title>

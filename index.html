@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>My Octopress Blog</title>
+  <title>Hamit YAY</title>
   <meta name="author" content="Hamit YAY">
 
   
-  <meta name="description" content="Git flow, git deki yeni bir branch oluşturma işlemlerini bir standart haline getirmiş, uygulama geliştirme aşamasında büyük kolaylık sağlayan git &hellip;">
+  <meta name="description" content="Bu yazı, bir yazılım geliştiricisi olarak linux terminalde en çok kullanılan komutlar hakkında olacaktır. Linux terminal açık kaynak felsefesi ile &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +21,7 @@
   <link rel="canonical" href="http://hamityay.github.io/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="Hamit YAY" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
@@ -36,7 +36,7 @@
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
+  <h1><a href="/">Hamit YAY</a></h1>
   
     <h2>Blog Journey...</h2>
   
@@ -65,6 +65,130 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/06/linux-terminal/">Linux Terminal</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-06T20:24:09+03:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>8:24 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Bu yazı, bir yazılım geliştiricisi olarak linux terminalde en çok kullanılan komutlar hakkında olacaktır. Linux terminal açık kaynak felsefesi ile yazılım geliştiren bir kimsenin eli ayağı niteliğindedir. Bu yüzden terminale dolayısı ile terminal komutlarına elimizden geldiğince hakim olmakta yarar var. Bu düşünceye dayanarak, Lnux yaz kampında bu gün gösterilen terminal komutlarına değineceğim.</p>
+
+<p>İlk olarak</p>
+
+<pre><code>$PATH
+</code></pre>
+
+<p>komutu.(Büyük yazıldığına dikkat edelim) PATH çalıştırılabilir dosyaların yerini gösteren değişken. Kullanıcı tarafından çalıştırılabilecek komut ve yazılımların aranacakları yerleri belirtir. Yukarıdaki komutta tanımlı olan dzinleri listeler.</p>
+
+<pre><code>export PATH=$PATH:~/project
+</code></pre>
+
+<p>komutu ile bir önceki komut ile listelenen dizinlere kök dizinindeki project klasör dizininin eklenmesini sağlar. Bu işlem sadece terminalin kullanıldığı oturum için geçerli olur.</p>
+
+<p>Kalıcı olarak eklemek için kök dizininde bulunan <em>.bashrc</em> dosyasına istenilen dizin eklenebilir. Bu işlemi terminal üzerinden <em>nano</em> editörü kullanılarak yapılabilir.</p>
+
+<pre><code>nano .bashrc
+</code></pre>
+
+<p>komutu terminal üzerinde <em>.bashrc</em> dosyasının içeriğinin düzenlenebilmesine olanak tanır. İstenilen değişiklikler yapıldıktan sonra</p>
+
+<blockquote><p>ctrl + x</p></blockquote>
+
+<p>kısa yolu editörden çıkılmasını sağlar. Değişiklikleri kaydetmek için  <em>&ldquo;y&rdquo;</em>  ve  <em>&ldquo;enter&rdquo;</em>  tuşlarına basılması yeterli olacaktır.</p>
+
+<p><strong>Dosya işlemleri ile ilgili komutlar</strong></p>
+
+<pre><code>ls
+</code></pre>
+
+<p>komutu bulunulan dizindeki klasör ve dosyaları listeler.</p>
+
+<pre><code>ls -a
+</code></pre>
+
+<p>komutu bulunulan dizindeki dosya ve klasörleri gizli olanlar ile birlikte listeler.</p>
+
+<pre><code>cd ~/project
+</code></pre>
+
+<p>komutu kök dizindeki project klasör dizinine geçmeyi sağlar.</p>
+
+<pre><code>cd ..
+</code></pre>
+
+<p>komutu bir üst dizine geçmeyi sağlar.</p>
+
+<pre><code>pwd
+</code></pre>
+
+<p>bulunulan dizini gösterir.</p>
+
+<pre><code>mkdir deneme
+</code></pre>
+
+<p>Bulunulan dizine <em>deneme</em> isimli klasör oluşturur.</p>
+
+<pre><code>mkdir -p deneme/deneme1
+</code></pre>
+
+<p>Bulunulan dizinde iç içe dosya açar.</p>
+
+<pre><code>rm -rf deneme.txt
+</code></pre>
+
+<p>komutu klasör ya da dosya silmek için kullanılabilir.</p>
+
+<pre><code>nano deneme.txt
+</code></pre>
+
+<p>komutu eğer dizinde  <em>deneme.txt</em>  dosyası yoksa oluşturur ve terminal üzerinde düzenleyebilmek için açar.</p>
+
+<pre><code>cat gemfile
+</code></pre>
+
+<p> <em>gemfile</em>  dosyasının içeriğini terminal üzerinde gösterir.</p>
+
+<pre><code>tail -f development.log
+</code></pre>
+
+<p><em>tail</em>  komutu dizindeki dosyanın son bölümünü gösterir.  <em>-f</em>  parametresi ile log dosyasının realtime takip edilebilmesini sağlar.</p>
+
+<pre><code>which ruby
+</code></pre>
+
+<p>komutu konsolda çalıştırılan komutların(ruby gibi) hangi dizinden çalıştırıldığını gösterir.</p>
+
+<pre><code>grep -i Hasan seed.rb
+</code></pre>
+
+<p><em>seed.rb</em>  dosyası içerisinde  <em>hasan</em>  stringini arar ve eşleşen satırları listeler.  <em>-i</em>  parametresi büyük küçük harf duyarlılık sorununu ortadan kaldırmak için kullanılabilir. Kullanılmadan da arama yapılabilir. Kullanılmadığı takdirde arama yaparken büyük küçük harfe duyarlı bir şekilde arama yapar.</p>
+
+<pre><code>find ~project/ruby -name "*.css"
+</code></pre>
+
+<p>Arama yapmak için kullanılır. Belirtilen dizindeki tüm <em>css</em> uzantılı dosyaları listeler.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -335,6 +459,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2016/08/06/linux-terminal/">Linux Terminal</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2016/08/02/git-flow/">Git Flow</a>
       </li>
     
@@ -396,6 +524,15 @@
   
 
 
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
 
