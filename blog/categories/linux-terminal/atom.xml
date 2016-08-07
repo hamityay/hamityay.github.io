@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux Terminal | Hamit YAY]]></title>
   <link href="http://hamityay.github.io/blog/categories/linux-terminal/atom.xml" rel="self"/>
   <link href="http://hamityay.github.io/"/>
-  <updated>2016-08-06T22:40:28+03:00</updated>
+  <updated>2016-08-07T09:31:49+03:00</updated>
   <id>http://hamityay.github.io/</id>
   <author>
     <name><![CDATA[Hamit YAY]]></name>
@@ -114,6 +114,22 @@
 </code></pre>
 
 <p>Arama yapmak için kullanılır. Belirtilen dizindeki tüm <em>css</em> uzantılı dosyaları listeler.</p>
+
+<p>Herhangi bir komutun aldığı parametreleri ve nasıl kullanıldığını görmek için</p>
+
+<pre><code>ls --help
+</code></pre>
+
+<p>komutu gibi istenilen komutun sonuna  <em>&ndash;help</em>  ekleyerek terminalde çalıştırılır.</p>
+
+<p>Komut hakkında daha detaylı bilg almak için</p>
+
+<pre><code>man ls
+</code></pre>
+
+<p>komutu gibi istenilen komutun başına  <em>man</em>  ifadesi eklenip çalıştırılır.</p>
+
+<p>Bu komutun çıktısı uzun olduğu için sayfa sayfa görebilmek için komutun sonuna  <em>more</em>  ifadesi eklenebilir. Bir sonraki sayfaya geçmek için  <em>space</em>  tuşuna basarak ilerlenebilir.</p>
 ]]></content>
   </entry>
   
